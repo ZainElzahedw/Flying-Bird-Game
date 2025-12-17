@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Flying Bird</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- شاشة البداية -->
+  <div id="startScreen">
+    <h1>Flying Bird</h1>
+    <button id="playBtn">Play</button>
+    <button id="storeBtn">Store</button>
+  </div>
+
+  <!-- اللعبة -->
+  <div id="gameUI" style="display:none;">
+    <div id="score">Score: 0 | Coins: 0 | Level: 1</div>
+    <canvas id="game" width="400" height="600"></canvas>
+    <button id="restart">Restart</button>
+  </div>
+
+  <!-- المتجر -->
+  <div id="store" style="display:none;">
+    <h3>Store</h3>
+    <div id="characters"></div>
+    <button id="closeStore">Close Store</button>
+  </div>
+
+  <audio id="flySound" src="fly.mp3"></audio>
+  <audio id="hitSound" src="hit.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
